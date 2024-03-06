@@ -1,0 +1,11 @@
+<%- include("partials/header.ejs") %>
+
+<body> 
+  <img class="center" src="https://yt3.googleusercontent.com/BxrE6pOcplImeDopOhtvWo8JaLyuUa1gVCo5BXjSnOGA-3l0EH2ERS9bvPAQmajqIdewbz9gRQ=s900-c-k-c0x00ffffff-no-rj" alt="greek philosopher"> 
+  <p>Refresh the page to get a new Proverb</p>
+  <% for(let proverb of locals.proverb) {%>
+    <h1 class="proverb">Proverb: <%= proverb.proverbs %></h1>
+    <h1 class="meaning">Meaning: <%= proverb.meaning %></h1>
+ <% } %>
+</body>
+<html>
